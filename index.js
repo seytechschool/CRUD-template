@@ -53,7 +53,6 @@ app.put('/api/employee/:id', (req, res) => {
         }
         res.json(employee);
     })
-})
-app.listen(3000);
-
-console.log('Running on port 3000...');
+});
+const port = 3000;
+app.listen(port, console.log('Running on port 3000...', port));
